@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features - Emotify</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img2.png') }}">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        background-image: url('/static/img3.png');
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+            }
+      .card {
+        max-width: 800px;
+        width: 100%;
+      }
+      nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 18px 8%;
+            transition: background 1s;
+        }    
+        nav .logo{
+            display: flex;
+            align-items: center;
+            font-size: 26px;
+            font-weight: 600;
+            color: #FFF;
+        }    
+        nav .logo img{
+            width: 40px;
+            margin-right: 10px;
+        }
+        nav ul li{
+          display: inline-block;
+          list-style: none;
+          margin: 10px 20px;    
+        }
+        nav ul li a{
+          text-decoration: none;
+          color: #FFF;
+          font-weight: 800;
+        }
+        nav:hover{
+          background: #fff;
+        }
+        nav:hover .logo{
+          color: #333;
+        }
+        nav:hover ul li a{
+          color: #333;
+        }
+    </style>
+</head>
+
+  <body>    
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <img src="{{ url_for('static', filename='img2.png') }}" alt="">
+          <span>Emotify</span>
+        </div>
+        <ul>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/features">FEATURES</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/team_info">TEAM-INFO</a></li>                        
+            <li><a href="/logout" class="btn btn-primary mt-3">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+     
+<div class="container">
+  <div class="row justify-content-center">
+     <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center">Application Features</h2>
+          <div id="application">
+            <div class="version">
+              <h3>Version 1</h3>
+              <ul>
+                <li>Emotion Detection for emotions like Happy, Neutral, Surprised, Angry, Sad</li>
+                <li>Music Playback through VLC Media Player</li>
+                <li>Contact Us</li>
+                <li>Team Info</li>
+              </ul>
+            </div>
+            <hr> <!-- Horizontal line to separate versions -->
+            <div class="version">
+              <h3>Version 1.1</h3>
+              <ul>
+                <li>Enhanced Emotion Detection for emotions like Disgust, Fearful</li>
+                <li>Integration with Spotify for music streaming</li>
+                <li>YouTube Integration for video content</li>
+                <li>User Dashboard for personalized experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>   
+  </body>
+</html>

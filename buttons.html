@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation System - Emotify</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img2.png') }}">   
+    <link rel="stylesheet" href="/static/button_style.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img2.png') }}" alt="">
+                <span>Emotify</span>
+            </div>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/features">FEATURES</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/team_info">TEAM-INFO</a></li>                        
+                <li><a href="/logout" class="btn btn-primary mt-3">Logout</a></li>           
+            </ul>
+        </nav>
+        <div class="content">
+                <div class="output" >
+                    <!-- {% if final_output %}
+                    <h2 style="font-family:Bio-Rhyme; color: white;margin:40px;font:40px; font-size:70px">You look {{final_output}}</h2>
+                    <h2 style="font-family:Bio-Rhyme; color: white;margin:40px;font:40px; font-size:70px">
+                        Embrace the moment - Music will play shortly
+                    </h2>
+                    {% endif %} -->
+                    {% if final_output %}
+                        <h2 style="font-family: Bio-Rhyme; color: white; margin: 40px; font: 40px; font-size: 70px">You look {{ final_output }}</h2>
+                        <h2 style="font-family: Bio-Rhyme; color: white; margin: 40px; font: 40px; font-size: 70px">Embrace the moment - Music will play shortly</h2>
+                    {% endif %}
+                </div>
+        </div>
+    </div>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var delay = 2000;
+
+            setTimeout(function() {
+                var final_output = "{{ final_output }}"; 
+                window.location.href = '/music?final_output=' + encodeURIComponent(final_output);
+            }, delay);
+        });
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var delay = 500;
+            var final_output = "{{ final_output }}";
+    
+            setTimeout(function() {
+                if (final_output.trim() === "") {
+                    // If final_output is empty, display a message on the page
+                    var outputDiv = document.querySelector('.output');
+                    outputDiv.innerHTML = "<h2 style='font-family:Bio-Rhyme; color: white; margin:40px; font:40px; font-size:70px'>Oops! Unable to detect mood.</h2>";
+                } else {
+                    // If final_output is not empty, redirect to /music
+                    window.location.href = '/music?final_output=' + encodeURIComponent(final_output);
+                }
+            }, delay);
+        });
+    </script>
+</body>
+</html>

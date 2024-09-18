@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation System - Emotify</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img2.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .content2 h2{
+            font-family: Merienda, sans-serif;
+            font-size: 2.5em; 
+            margin-bottom: 0.5em; 
+        }       
+    </style>
+</head>
+<body>  
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img2.png') }}" alt="">
+                <span>Emotify</span>
+            </div>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/features">FEATURES</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/team_info">TEAM-INFO</a></li>                        
+                <li><a href="/logout" class="btn btn-primary mt-3">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="content2">
+            <h2 class="custom-font">Experience Emotify: Where Music Meets Mood!</h2>
+            <h2 class="custom-font">Click Start Detection below to engage with the camera and discover the magic of synchronized music and emotions!</h2>
+                <form action="/start_detection" method="post">
+                    <div style="text-align: center;">
+                        <button id="startDetectionBtn" type="submit" class="start-button">Start Emotion Detection</button>
+                    </div>
+                </form>                
+        </div>
+    </br>     
+    </div>    
+  </body>
+</html>

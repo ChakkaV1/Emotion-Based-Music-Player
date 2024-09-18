@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Team Info - Emotify</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img2.png') }}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="/static/team_info.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .content1 h1{
+            font-family: Merienda, sans-serif;
+            font-size: 2.5em; 
+            margin-bottom: 0.5em; 
+        }       
+    </style>
+</head>
+<body>
+<div class="header">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img2.png') }}" alt="">
+                <span>Emotify</span>
+            </div>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/features">FEATURES</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/team_info">TEAM-INFO</a></li>                        
+                <li><a href="/logout" class="btn btn-primary mt-3">Logout</a></li>                
+            </ul>
+        </nav>
+        <div class="content1">
+            <h1>Emotify - Team</h1>
+            <div class="our_team">
+                <div class="team_member">
+                <div class="member_img">
+                    <img src="/static/woman.png" alt="our_team">
+                </div>
+                <h3>Vaishnavi</h3>
+                <span><h4>chakkav1@montclair.edu</h4></span>
+                <span>+1 2486881702</span>
+                </div>
+                <div class="team_member">
+                    <div class="member_img">
+                    <img src="/static/woman.png" alt="our_team"> 
+                    </div>
+                    <h3>Nimisha</h3>
+                    <span><h4>bonigalan1@montclair.edu</h4></span>
+                    <span>+1 5512603359</span>
+                </div>
+                <div class="team_member">
+                    <div class="member_img">
+                    <img src="/static/man1.png" alt="our_team"> 
+                    </div>
+                    <h3>Ajay</h3>
+                    <span><h4>Morua1@montclair.edu</h4></span>
+                    <span>+1 2016794519</span>
+                </div> 
+                <div class="team_member">
+                    <div class="member_img">
+                    <img src="/static/man1.png" alt="our_team"> 
+                    </div>
+                    <h3>Manikanta</h3>
+                    <span><h4>vemavarapup1@montclair.edu</h4></span>
+                    <span>+1 2012842493</span>
+                </div> 
+            </div>
+        </div>	
+    </div>
+</body>
+</html>

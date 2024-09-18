@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotify - Web Player: Emotion-Driven Music Player</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img2.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .content {
+            text-align: center;
+        }
+        .content h1{
+            font-family: Merienda, sans-serif;
+            font-size: 5em; 
+            margin-bottom: 0.5em; 
+        }       
+        .slide-left {
+            animation: slideLeft 1s ease-in-out;
+        }    
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>    
+</head>
+<body>    
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img2.png') }}" alt="">
+                <span>Emotify</span>
+            </div>
+            <ul>
+                <li><a href="/login" class="btn btn-primary mt-3">LOGIN</a></li>
+                <li><a href="/register" class="btn btn-primary mt-3">REGISTER</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1 class="slide-left">Welcome to Emotify, where music and emotions harmonize....!</h1>
+        </div>
+    </br> 
+   </div>    
+  </body>
+</html>
