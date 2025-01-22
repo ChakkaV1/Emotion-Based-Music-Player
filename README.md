@@ -15,11 +15,11 @@ An Emotion-Based Music Player Website uses facial recognition to detect a user's
 9. Logout: Users securely log out, clearing authentication tokens.
 
 ## Built With
-Flask: Web framework used to build the application and serve the interface.
-OpenCV: Library for real-time facial recognition to detect user emotions.
-Python-VLC: Library for playing and managing music based on detected emotions.
-SQLAlchemy: ORM (Object-Relational Mapping) library for managing interactions with the database.
-TensorFlow: Machine learning framework for training and implementing emotion detection models.
+1. Flask: Web framework used to build the application and serve the interface. 
+2. OpenCV: Library for real-time facial recognition to detect user emotions. 
+3. Python-VLC: Library for playing and managing music based on detected emotions. 
+4. SQLAlchemy: ORM (Object-Relational Mapping) library for managing interactions with the database.
+5. TensorFlow: Machine learning framework for training and implementing emotion detection models.
 
 ## Getting Started
 Follow these steps to get a copy of the project up and running on your local machine.
