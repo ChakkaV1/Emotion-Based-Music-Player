@@ -4,26 +4,22 @@
 An Emotion-Based Music Player Website uses facial recognition to detect a user's emotions in real-time. The application analyzes these emotions and plays songs that match the user's mood, creating a more enjoyable and personalized music experience.
 
 ## Product Features
-1. Registration: Users will be able to create a new account by providing necessary details such as username, email, phone number and password. 
-2. Login: Registered users can securely log in to their accounts using their username/email and password. The system will authenticate their credentials and grant access to their
-personalized profile.
-3. Human Face Detection: Once the user logs in, the system will be capable of identifying and locating faces within a given image using advanced facial recognition technology.
-4. Emotion Detection: Upon successful face detection, the system will proceed to analyze facial expressions such as eye movement, smiles, and frowns to accurately determine the
-emotional state of the user. This analysis will be powered by machine learning models that are specifically trained for real-time emotion detection, ensuring precise and
-responsive results.
-5. Music Player: Once the user’s emotional state is detected, the system will automatically select music that matches their mood and play an appropriate song.
-6. Contact Page Feature: Users will have the option to use the contact page to send feedback, report issues, or seek support regarding the system's functionalities.
-7. Features Page: A dedicated page will showcase the features of both current and upcoming versions in a clear and informative manner, helping users understand the system's
-capabilities.
-8. Team Info Page: The system will include a dedicated team information page where users can access details about the development team behind the project.
-9. Logout: Users will securely log out of their accounts, ensuring the clearance of authentication tokens to prevent unauthorized access.
+1. Registration: Users can create an account with username, email, phone number, and password.
+2. Login: Registered users can log in securely using their credentials.
+3. Human Face Detection: The system detects and locates faces within an image using facial recognition.
+4. Emotion Detection: Analyzes facial expressions to determine emotional state with machine learning models.
+5. Music Player: Plays music based on the detected emotional state of the user.
+6. Contact Page Feature: Users can send feedback or seek support via the contact page.
+7. Features Page: Displays information about current and upcoming features of the system.
+8. Team Info Page: Provides details about the development team.
+9. Logout: Users securely log out, clearing authentication tokens.
 
 ## Built With
 Flask: Web framework used to build the application and serve the interface.
 OpenCV: Library for real-time facial recognition to detect user emotions.
 Python-VLC: Library for playing and managing music based on detected emotions.
 SQLAlchemy: ORM (Object-Relational Mapping) library for managing interactions with the database.
-TensorFlow: Machine learning framework used for training and implementing emotion detection models.
+TensorFlow: Machine learning framework for training and implementing emotion detection models.
 
 ## Getting Started
 Follow these steps to get a copy of the project up and running on your local machine.
