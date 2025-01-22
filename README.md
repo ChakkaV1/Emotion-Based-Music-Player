@@ -31,8 +31,8 @@ A modern web browser (e.g., Chrome, Firefox, or Edge).
 ## Setup
 ```bash
 Clone the Repository:
-git clone https://github.com/ChakkaV1/TAX-TRACKING-FINAL-PROJECT.git
-cd TAX-TRACKING-FINAL-PROJECT
+git clone https://github.com/ChakkaV1/Emotion-Based-Music-Player.git
+cd Emotion-Based-Music-Player
 
 Create a virtual environment:
 python -m venv venv
